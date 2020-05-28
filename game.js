@@ -74,7 +74,6 @@ function update(credstat) {
     document.body.innerHTML = `
     <h1 style="margin-bottom: 0px;">Sideways Cake</h1>
     <p style="margin-top: 0px;">A game inspired by Bizaardvark</p>
-    <a href="/instructions.html">Instructions</a>
     <h3>Your Credits: ${credits}</h3>
     <h3>Your Score: ${score}</h3><br>
     <h3 id="percent"></h3><br>
@@ -83,6 +82,7 @@ function update(credstat) {
     <input type="number" value="${bets}" min="1" max="${credits}" id="betnum"></input>
     <p>credits that the cake</p>
     <p id="willnt" class="will" onclick="switchWill()">will</p>
+    <p>(click to change guess)</p>
     <p>be sideways</p>
     <button id="bet" onclick="handle()">Bet</button>
     `
@@ -91,7 +91,6 @@ function update(credstat) {
     document.body.innerHTML = `
     <h1>Sideways Cake</h1>
     <p>A game inspired by Bizaardvark</p>
-    <a href="/instructions.html">Instructions</a>
     <h3>Your Credits: ${credits}</h3>
     <h3>Your Score: ${score}</h3><br>
     <img src="${status == "true" ? "cake_sideways.png" : "cake_upright.png" }" width="100" height="100">
