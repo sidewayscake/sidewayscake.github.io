@@ -77,7 +77,6 @@ function update(credstat) {
     <h3>Your Credits: ${credits}</h3>
     <h3>Your Score: ${score}</h3><br>
     <h3 id="percent"></h3><br>
-    <img src="${status == "true" ? "cake_sideways.png" : "cake_upright.png" }" width="100" height="100">
     <p>I bet</p>
     <input type="number" value="${bets}" min="1" max="${credits}" id="betnum"></input>
     <p>credits that the cake</p>
@@ -89,8 +88,8 @@ function update(credstat) {
     resetPercent()
   } else {
     document.body.innerHTML = `
-    <h1>Sideways Cake</h1>
-    <p>A game inspired by Bizaardvark</p>
+    <h1 style="margin-bottom: 0px;">Sideways Cake</h1>
+    <p style="margin-top: 0px;">A game inspired by Bizaardvark</p>
     <h3>Your Credits: ${credits}</h3>
     <h3>Your Score: ${score}</h3><br>
     <img src="${status == "true" ? "cake_sideways.png" : "cake_upright.png" }" width="100" height="100">
