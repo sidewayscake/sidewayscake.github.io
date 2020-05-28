@@ -74,6 +74,7 @@ function update(credstat) {
     document.body.innerHTML = `
     <h1 style="margin-bottom: 0px;">Sideways Cake</h1>
     <p style="margin-top: 0px;">A game inspired by Bizaardvark</p>
+    <a href="https://twitter.com/CCircus445">Created by @CCircus445</a><br>
     <a href="https://github.com/sidewayscake/sidewayscake.github.io/blob/master/README.md">Instructions</a>
     <h3>Your Credits: ${credits}</h3>
     <h3>Your Score: ${score}</h3><br>
@@ -91,6 +92,7 @@ function update(credstat) {
     document.body.innerHTML = `
     <h1 style="margin-bottom: 0px;">Sideways Cake</h1>
     <p style="margin-top: 0px;">A game inspired by Bizaardvark</p>
+    <a href="https://twitter.com/CCircus445">Created by @CCircus445</a><br>
     <a href="https://github.com/sidewayscake/sidewayscake.github.io/blob/master/README.md">Instructions</a>
     <h3>Your Credits: ${credits}</h3>
     <h3>Your Score: ${score}</h3><br>
