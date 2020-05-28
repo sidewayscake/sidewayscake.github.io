@@ -1,0 +1,52 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sideways Cake</title>
+  <style>
+    input[type=number] {
+      text-align: center;
+      width: 100%;
+      height: 60px;
+      font-size: 40px;
+    }
+    .will {
+      font-size: 40px;
+      color: green;
+    }
+    .wont {
+      font-size: 40px;
+      color: red;
+    }
+    #bet, #tryAgain {
+      width: fit-content;
+      height: 100px;
+      font-size: 40px;
+      background: grey;
+    }
+    #willnt {
+      margin-top: inherit;
+      margin-bottom: inherit;
+    }
+    h3 {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  </style>
+</head>
+<body style="text-align: center;">
+  <h1 style="margin-bottom: 0px;">Sideways Cake</h1>
+  <p style="margin-top: 0px;">A game inspired by Bizaardvark</p>
+  <a href="/instructions.html">Instructions</a>
+  <h3>Your Credits: 15</h3>
+  <h3>Your Score: 0</h3><br>
+  <h3 id="percent"></h3><br>
+  <img src="cake_upright.png" width="100" height="100">
+  <p>I bet</p>
+  <input type="number" value="2" min="1" max="15" id="betnum"></input>
+  <p>credits that the cake</p>
+  <p id="willnt" class="will" onclick="switchWill()">will</p>
+  <p>be sideways</p>
+  <button id="bet" onclick="handle()">Bet</button>
+</body>
+<script src="game.js"></script>
+</html>
